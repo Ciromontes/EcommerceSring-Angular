@@ -1,7 +1,7 @@
-package com.codeWithProjects.ecom.services.auth;
+package com.codewithProjects.ecom.services.auth;
 
-import com.codeWithProjects.ecom.dto.SignupRequest;
-import com.codeWithProjects.ecom.dto.UserDto;
+import com.codewithProjects.ecom.dto.SignupRequest;
+import com.codewithProjects.ecom.dto.UserDto;
 
 public interface AuthService {
 

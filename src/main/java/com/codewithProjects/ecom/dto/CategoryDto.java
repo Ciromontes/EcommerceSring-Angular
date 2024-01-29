@@ -1,2 +1,14 @@
-package com.codeWithProjects.ecom.dto;public class CategoryDto {
+package com.codewithProjects.ecom.dto;
+
+import lombok.Data;
+
+@Data
+public class CategoryDto {
+
+    private Long id;
+
+    private String name;
+
+    private String description;
+
 }

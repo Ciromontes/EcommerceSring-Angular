@@ -1,6 +1,6 @@
-package com.codeWithProjects.ecom.dto;
+package com.codewithProjects.ecom.dto;
 
-import com.codeWithProjects.ecom.enums.UserRole;
+import com.codewithProjects.ecom.enums.UserRole;
 import lombok.Data;
 
 @Data

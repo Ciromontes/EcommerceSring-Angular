@@ -1,4 +1,4 @@
-package com.codeWithProjects.ecom.config;
+package com.codewithProjects.ecom.config;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;

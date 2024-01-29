@@ -1,4 +1,4 @@
-package com.codeWithProjects.ecom.dto;
+package com.codewithProjects.ecom.dto;
 
 import lombok.Data;
 

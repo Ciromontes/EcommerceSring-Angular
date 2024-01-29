@@ -1,4 +1,4 @@
-package com.codeWithProjects.ecom.utils;
+package com.codewithProjects.ecom.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

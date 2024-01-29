@@ -1,7 +1,7 @@
-package com.codeWithProjects.ecom.repository;
+package com.codewithProjects.ecom.repository;
 
-import com.codeWithProjects.ecom.entity.User;
-import com.codeWithProjects.ecom.enums.UserRole;
+import com.codewithProjects.ecom.entity.User;
+import com.codewithProjects.ecom.enums.UserRole;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

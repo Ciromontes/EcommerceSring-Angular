@@ -1,17 +1,17 @@
-package com.codeWithProjects.ecom.services.auth;
+package com.codewithProjects.ecom.services.auth;
 
-import com.codeWithProjects.ecom.dto.SignupRequest;
-import com.codeWithProjects.ecom.dto.UserDto;
-import com.codeWithProjects.ecom.entity.User;
-import com.codeWithProjects.ecom.enums.UserRole;
-import com.codeWithProjects.ecom.repository.UserRepository;
+import com.codewithProjects.ecom.dto.SignupRequest;
+import com.codewithProjects.ecom.dto.UserDto;
+import com.codewithProjects.ecom.entity.User;
+import com.codewithProjects.ecom.enums.UserRole;
+import com.codewithProjects.ecom.repository.UserRepository;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AuthServiceImpl implements AuthService{
+public class AuthServiceImpl implements com.codewithProjects.ecom.services.auth.AuthService {
     @Autowired
     private UserRepository userRepository;
     @Autowired

@@ -1,6 +1,6 @@
-package com.codeWithProjects.ecom.entity;
+package com.codewithProjects.ecom.entity;
 
-import com.codeWithProjects.ecom.enums.UserRole;
+import com.codewithProjects.ecom.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.Data;
 

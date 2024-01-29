@@ -1,7 +1,7 @@
-package com.codeWithProjects.ecom.services.jwt;
+package com.codewithProjects.ecom.services.jwt;
 
-import com.codeWithProjects.ecom.entity.User;
-import com.codeWithProjects.ecom.repository.UserRepository;
+import com.codewithProjects.ecom.entity.User;
+import com.codewithProjects.ecom.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

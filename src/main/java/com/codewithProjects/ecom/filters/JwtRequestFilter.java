@@ -1,7 +1,7 @@
-package com.codeWithProjects.ecom.filters;
+package com.codewithProjects.ecom.filters;
 
-import com.codeWithProjects.ecom.services.jwt.UserDetailsServiceImpl;
-import com.codeWithProjects.ecom.utils.JwtUtil;
+import com.codewithProjects.ecom.services.jwt.UserDetailsServiceImpl;
+import com.codewithProjects.ecom.utils.JwtUtil;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

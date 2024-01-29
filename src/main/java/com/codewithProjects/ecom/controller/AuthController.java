@@ -1,12 +1,13 @@
-package com.codeWithProjects.ecom.controller;
+package com.codewithProjects.ecom.controller;
 
-import com.codeWithProjects.ecom.dto.AuthenticationRequest;
-import com.codeWithProjects.ecom.dto.SignupRequest;
-import com.codeWithProjects.ecom.dto.UserDto;
-import com.codeWithProjects.ecom.entity.User;
-import com.codeWithProjects.ecom.repository.UserRepository;
-import com.codeWithProjects.ecom.services.auth.AuthService;;
-import com.codeWithProjects.ecom.utils.JwtUtil;
+import com.codewithProjects.ecom.dto.AuthenticationRequest;
+import com.codewithProjects.ecom.dto.SignupRequest;
+import com.codewithProjects.ecom.dto.UserDto;
+import com.codewithProjects.ecom.entity.User;
+import com.codewithProjects.ecom.repository.UserRepository;
+import com.codewithProjects.ecom.services.auth.AuthService;;
+import com.codewithProjects.ecom.utils.JwtUtil;
+import com.codewithProjects.ecom.utils.JwtUtil;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.json.JSONException;
@@ -70,9 +71,6 @@ public class AuthController {
             response.addHeader("Access-Control-Expose-Headers", "Authorization");
             response.addHeader("Access-Control-Allow-Headers", "Authorization, X-PINGOTHER, Origin, " +
                     "X-Requested-With, Content-Type, Accept, X-Custom-header");
-
-
-
             response.addHeader(HEADER_STRING, TOKEN_PREFIX + " " + jwt);
         }
     }

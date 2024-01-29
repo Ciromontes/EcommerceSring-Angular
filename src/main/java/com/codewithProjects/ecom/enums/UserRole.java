@@ -1,4 +1,4 @@
-package com.codeWithProjects.ecom.enums;
+package com.codewithProjects.ecom.enums;
 
 public enum UserRole {
     ADMIN,

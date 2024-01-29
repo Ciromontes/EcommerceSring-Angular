@@ -1,6 +1,6 @@
-package com.codeWithProjects.ecom.config;
+package com.codewithProjects.ecom.config;
 
-import com.codeWithProjects.ecom.filters.JwtRequestFilter;
+import com.codewithProjects.ecom.filters.JwtRequestFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
