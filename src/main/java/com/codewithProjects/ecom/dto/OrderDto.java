@@ -1,6 +1,7 @@
-package com.codewithProjects.ecom.entity;
+package com.codewithProjects.ecom.dto;
 
-
+import com.codewithProjects.ecom.entity.CartItems;
+import com.codewithProjects.ecom.entity.User;
 import com.codewithProjects.ecom.enums.OrderStatus;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -9,13 +10,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-@Entity
 @Data
-@Table(name = "orders")
-public class Order {
+public class OrderDto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String orderDescription;
@@ -36,11 +33,10 @@ public class Order {
 
     private UUID trackingId;
 
-    @OneToOne(cascade = CascadeType.MERGE)
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
-    private User user;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "order")
-    private List<CartItems> cartItems;
+    private String userName;
 
+
+    private List<CartItemsDto> cartItems;
 }
+
