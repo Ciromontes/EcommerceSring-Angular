@@ -27,6 +27,8 @@ public class CartController {
         return ResponseEntity.status(HttpStatus.OK).body(orderDto);
     }
 
+
+    @GetMapping("/coupon/{userId}/{code}")
     public ResponseEntity<?> applyCoupon(@PathVariable Long userId, @PathVariable String code){
         try{
             OrderDto orderDto = cartService.applyCoupon(userId, code);
@@ -36,5 +38,10 @@ public class CartController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
         }
     }
+    @PostMapping("/addition")
+    public ResponseEntity<?> increaseProductQuantity(@RequestBody AddProductInCartDto addProductInCartDto){
+        return ResponseEntity.status(HttpStatus.CREATED).body(cartService.increaseProductQuantity(addProductInCartDto));
+    }
+
 
 }
