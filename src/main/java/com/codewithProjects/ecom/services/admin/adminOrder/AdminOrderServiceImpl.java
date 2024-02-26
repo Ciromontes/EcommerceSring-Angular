@@ -47,3 +47,14 @@ public class AdminOrderServiceImpl implements AdminOrderService {
 
 }
 
+
+/*Primero, le dices al ayudante el número de pedido (orderId) y el nuevo estado (status) que quieres cambiar.
+El ayudante va a buscar en la lista de todos los pedidos (orderRepository.findById(orderId)) para encontrar el pedido con ese número.
+Si el ayudante encuentra el pedido (if(optionalOrder.isPresent())), entonces hace lo siguiente:
+Toma el pedido (Order order = optionalOrder.get()).
+Si el estado que le diste es “Enviado” (if(Objects.equals(status, "Shipped"))), entonces cambia el estado del pedido a “Enviado” (order.setOrderStatus(OrderStatus.Shipped)).
+Si el estado que le diste es “Entregado” (else if(Objects.equals(status, "Delivered"))), entonces cambia el estado del pedido a “Entregado” (order.setOrderStatus(OrderStatus.Delivered)).
+Después de cambiar el estado del pedido, el ayudante guarda el pedido actualizado en la lista de pedidos (orderRepository.save(order)).
+Finalmente, el ayudante te devuelve el pedido actualizado (return orderRepository.save(order).getOrderDto()).
+Si el ayudante no puede encontrar el pedido con el número que le diste, entonces te devuelve nada (return null).*/
+
