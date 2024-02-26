@@ -5,5 +5,6 @@ import com.codewithProjects.ecom.dto.OrderDto;
 import java.util.List;
 
 public interface AdminOrderService {
-    List<OrderDto> getAllPlaceOrders();
+    List<OrderDto> getAllPlacedOrders();
+    public OrderDto changeOrderStatus(Long orderId, String status);
 }
